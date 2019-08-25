@@ -2,13 +2,17 @@ Install the recommended extensions.  If you closed the notifcation you can find 
 ![Image](https://i.imgur.com/Yu6CVPI.png)
 
 Install Docker.
->https://download.docker.com/win/stable/Docker%20for%20Windows%20Installer.exe
+>Windows: https://download.docker.com/win/stable/Docker%20for%20Windows%20Installer.exe
+
+>Linux: Your package manager should have it.
 
 Run ```docker run -d -p 8888:8080 plantuml/plantuml-server:tomcat``` to setup the PlantUML Server
 
+>If you install Docker with VSCode running you may need to restart VSCode for the docker command to work.
+
 Ensure each file for projects include <file>.c4.doc.puml to show that it is the c4 level documentation of that file.
 
->Press Ctrl + D to view .puml files in visualized mode in realtime.
+>Press Alt + D to view .puml files in visualized mode in realtime.
 
 
 Include <file>.doc.md if you need to elaborate on design thoughts regarding the file.  Good notes now make life easier later.  Particular implementation details should be in comments in code still.
